@@ -17,7 +17,7 @@ class MenuTable extends Migration
             $table->increments('menu_id');
             $table->string('menu_name',20);
             $table->string('menu_author',10);
-            $table->string('menu_content',200);
+            $table->text('menu_content');
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }

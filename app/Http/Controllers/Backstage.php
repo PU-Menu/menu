@@ -37,6 +37,6 @@ class Backstage extends Controller
                 'menu_content' =>  $content,
             ]
         );
-        return redirect('/add_menu');
+        return redirect('/menu_list');
     }   
 }
