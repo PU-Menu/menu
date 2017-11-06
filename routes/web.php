@@ -21,3 +21,4 @@ Route::get('/menu_list', 'Backstage@menu_list')->name('allData');//菜單列表
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/location', 'MenuController@location');
