@@ -43,6 +43,7 @@
 
             .content {
                 text-align: center;
+                width: 80%;
             }
 
             .title {
@@ -70,6 +71,8 @@
 
             
         </style>
+
+        
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -89,7 +92,10 @@
                     Location
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4361.154448640293!2d120.6704144202575!3d24.14029948274557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d0c11936e59%3A0x138ae6b161c8831!2z6Ie65Lit5paH5a246aSo!5e0!3m2!1szh-TW!2stw!4v1509992270274" width="1000px" height="450px"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4361.154448640293!2d120.6704144202575!3d24.14029948274557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d0c11936e59%3A0x138ae6b161c8831!2z6Ie65Lit5paH5a246aSo!5e0!3m2!1szh-TW!2stw!4v1509992270274" width="100%" height="500px"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
+                    
                 </div>
             </div>
             
