@@ -25,4 +25,9 @@ class MenuController extends Controller
     {
         return view('location');
     }
+
+    public function header()
+    {
+        return view('/header');
+    }
 }
