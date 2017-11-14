@@ -39,4 +39,8 @@ class MenuController extends Controller
     {
         return view('/header');
     }
+    public function index()
+    {
+        return view('index');
+    }
 }
