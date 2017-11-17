@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
 <title>作家一覽</title>
 <style>
-body {
-    margin-top: 200px;
-}
+
 .text-secondary{
   text-align: center;
+  position: relative;
+    top:50px;
 }
 </style>
 </head>

@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
 <style>
-body {
-    margin-top: 200px;
+.display-1 {
+    position: relative;
+    top:50px;
+    text-align: center;
+}
+.subtitle{
+  font-size: 2em;
 }
 </style>
 </head>
@@ -34,7 +39,7 @@ body {
           <img class="img-fluid d-block" src="{{ URL::asset('/dish02.jpg') }}">
         </div>
         <div class="col-md-6">
-           <h1 class="">菜色介紹</h1>
+           <h1 class="subtitle">菜色介紹</h1>
            <p class=""><h4>採摘野菜，熬煮成粥</h4></p>
         </div>
       </div>
@@ -44,7 +49,7 @@ body {
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="">作家故事</h1>
+          <h1 class="subtitle">作家故事</h1>
         </div>
       </div>
       <div class="row">
@@ -61,7 +66,7 @@ body {
       <div class="row">
         <div class="col-md-12">
           
-          <h1 class=""><a href="{{ url('/author') }}">作家連結</a></h1>
+          <h1 class="subtitle"><a href="{{ url('/author') }}">作家連結</a></h1>
           
         </div>
       </div>

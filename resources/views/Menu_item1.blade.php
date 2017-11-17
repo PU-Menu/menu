@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> 
 <style>
-body {
-    margin-top: 200px;
+.display-1 {
+    position: relative;
+    top:50px;
+    text-align: center;
+}
+.subtitle{
+  font-size: 2em;
 }
 </style>
 </head>
@@ -35,7 +40,7 @@ body {
         </div>
 
         <div class="col-md-6">
-          <h1 class="">菜色介紹</h1>
+          <h1 class="subtitle">菜色介紹</h1>
 
           <p class=""><h4>結合義式料理Braciole肉捲的作法和本土內餡，烹調肉捲，須槌拍肉料，放上食材，捲起肉片，紮牢棉線，進鍋油煎——肉片從墊底的下層</h4></p>
         </div>
@@ -46,7 +51,7 @@ body {
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="">作家故事</h1>
+          <h1 class="subtitle">作家故事</h1>
         </div>
       </div>
       <div class="row">
@@ -68,7 +73,7 @@ body {
       <div class="row">
         <div class="col-md-12">
 
-          <h1 class=""><a href="{{ url('/author') }}">作家連結</a></h1>
+          <h1 class="subtitle"><a href="{{ url('/author') }}">作家連結</a></h1>
         </div>
       </div>
       

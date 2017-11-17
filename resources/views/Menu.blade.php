@@ -5,8 +5,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
 <style>
-body {
-    margin-top: 200px;
+.display-1 {
+    position: relative;
+    top:50px;
+    /*margin-top: 150px;*/
+    text-align: center;
+}
+.subtitle{
+  font-size: 2em;
 }
 </style>
 </head>
@@ -30,12 +36,12 @@ body {
         <div class="col-md-6">
           <a href="{{ url('/dish1') }}" id="item">
           <img class="img-fluid d-block" src="{{ URL::asset('/dish01.jpg') }}">
-          <h1 class="">梅干蒸肉捲</h1> </a>
+          <h1 class="subtitle">梅干蒸肉捲</h1> </a>
         </div>
         <div class="col-md-6">
           <a href="{{ url('/dish2') }}" id="item">
           <img class="img-fluid d-block" src="{{ URL::asset('/dish02.jpg') }}" />
-          <h1 class="">野菜鹹派</h1></a>
+          <h1 class="subtitle">野菜鹹派</h1></a>
         </div>
       </div>
     </div>
