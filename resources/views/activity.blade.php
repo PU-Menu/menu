@@ -3,8 +3,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <style>
-    body{
+    .content{
       margin-top: 200px;
+      font-size: 50px;
     }
   </style>
 
@@ -17,7 +18,7 @@
 
 @section('content')
 
-<div class="w3-container w3-center w3-animate-opacity">
+<div class="w3-container w3-center w3-animate-opacity content">
   Comming Soon
 </div>
 @stop
