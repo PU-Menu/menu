@@ -32,13 +32,13 @@
     .content {
         text-align: center;
         width: 80%;
-        margin-top: 250px;
+        margin-top: 150px;
         margin-bottom:50px;
     }
 
     .title {
         font-size: 84px;
-        color: #0FFF95;
+        /*color: #0FFF95;*/
     }
 
     .links > a {
@@ -61,6 +61,7 @@
 
     .address {
         font-size: 20px;
+        margin-bottom:20px;
     } 
 
     
