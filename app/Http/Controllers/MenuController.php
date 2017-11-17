@@ -43,4 +43,8 @@ class MenuController extends Controller
     {
         return view('index');
     }
+    public function activity()
+    {
+        return view('activity');
+    }
 }
