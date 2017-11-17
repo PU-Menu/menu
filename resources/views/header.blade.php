@@ -70,7 +70,7 @@
 -->
             <nav class="cd-secondary-nav">
             <ul>
-                <li><a href="#">活動</a></li>
+                <li><a href="{{ url('/activity') }}">活動</a></li>
                 <li><a href="{{ url('/menu') }}">菜單</a></li>
                 <li><a href="{{ url('/author') }}">作者</a></li>
                 <li><a href="{{ url('/location') }}">位置</a></li>
