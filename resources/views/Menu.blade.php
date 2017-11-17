@@ -3,11 +3,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
+<style>
+body {
+    margin-top: 200px;
+}
+</style>
+</head>
 
 @section('header')    
 @stop
 @section('content')  
+ <body>
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -21,52 +28,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
+          <a href="{{ url('/dish1') }}" id="item">
+          <img class="img-fluid d-block" src="{{ URL::asset('/dish01.jpg') }}">
+          <h1 class="">梅干蒸肉捲</h1> </a>
         </div>
         <div class="col-md-6">
-          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <p class="">菜名
-            <br>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <p class="">
-            <div class="col-md-6">
-              <p class="">菜名
-                <br>
-              </p>
-            </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
-        </div>
-        <div class="col-md-6">
-          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <p class="">菜名
-            <br>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <div class="col-md-6">
-            <p class="">菜名
-              <br>
-            </p>
-          </div>
+          <a href="{{ url('/dish2') }}" id="item">
+          <img class="img-fluid d-block" src="{{ URL::asset('/dish02.jpg') }}" />
+          <h1 class="">野菜鹹派</h1></a>
         </div>
       </div>
     </div>
