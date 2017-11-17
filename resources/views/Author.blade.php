@@ -11,6 +11,9 @@
 body {
     margin-top: 200px;
 }
+.text-secondary{
+  text-align: center;
+}
 </style>
 </head>
 @section('header')    
@@ -22,7 +25,7 @@ body {
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-secondary">
-            <font size="7">Author</font>
+            <font size="7" style="">Author</font>
           </h1>
         </div>
       </div>
