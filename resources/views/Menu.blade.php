@@ -28,12 +28,12 @@ body {
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <a href = "Menu_item1.html">
+          <a href="{{ url('/dish01') }}" id="item">
           <img class="img-fluid d-block" src="{{ URL::asset('/dish01.jpg') }}">
           <h1 class="">梅干蒸肉捲</h1> </a>
         </div>
         <div class="col-md-6">
-          <a href = "Menu_item2.html">
+          <a href="{{ url('/dish02') }}" id="item">
           <img class="img-fluid d-block" src="{{ URL::asset('/dish02.jpg') }}" />>
           <h1 class="">野菜鹹派</h1></a>
         </div>

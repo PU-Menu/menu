@@ -28,18 +28,7 @@ body {
       </div>
     </div>
   </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="btn-group">
-            <a href="#fir" class="btn btn-primary active">楊逵</a>
-            <a href="#sec" class="btn btn-primary active">陳千武</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <div class="py-5">
     <div class="container" id="fir">
       <div class="row">

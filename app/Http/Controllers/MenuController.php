@@ -39,4 +39,12 @@ class MenuController extends Controller
     {
         return view('/header');
     }
+    public function dish1()
+    {
+        return view('Menu_item1');
+    }
+    public function dish2()
+    {
+        return view('Menu_item2');
+    }
 }
