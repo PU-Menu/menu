@@ -23,3 +23,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/location', 'MenuController@location');
 Route::get('/header', 'MenuController@header');
+Route::get('/author', 'MenuController@author');
+Route::get('/menu', 'MenuController@menu');

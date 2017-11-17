@@ -48,6 +48,7 @@
 </style>
 
 
+
 <div id="wrapper">
     <header class="cd-auto-hide-header" >
         <div class="logo"><a href="#0"><img src="{{ URL::asset('/logo.jpg') }}" alt="Logo" class="logo_img" width="80px" height="80px"></a></div>
@@ -67,10 +68,10 @@
 
         <nav class="cd-secondary-nav">
             <ul>
-                <li><a href="#0">活動</a></li>
-                <li><a href="#0">菜單</a></li>
-                <li><a href="#0">作者</a></li>
-                <li><a href="#0" class="active">位置</a></li>
+                <li><a href="#">活動</a></li>
+                <li><a href="{{ url('/menu') }}">菜單</a></li>
+                <li><a href="{{ url('/author') }}">作者</a></li>
+                <li><a href="{{ url('/location') }}" class="active">位置</a></li>
             </ul>
         </nav> <!-- .cd-secondary-nav -->
         @yield('header')

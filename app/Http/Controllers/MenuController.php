@@ -21,6 +21,15 @@ class MenuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function author()
+    {
+        return view('Author');
+    }
+    public function menu()
+    {
+        return view('Menu');
+    }
+
     public function location()
     {
         return view('location');
