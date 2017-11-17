@@ -14,7 +14,7 @@
   border-radius: 4px;
   background-color: grey;
   border: none;
-  color: #FFFFFF;
+  color: white;
   text-align: center;
   font-size: 28px;
   padding: 10px;
@@ -48,6 +48,14 @@
   opacity: 1;
   right: 0;
 }
+
+.article{
+  margin-top: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
 </style>
 
 <title>台中文學館</title>
@@ -55,10 +63,10 @@
 <body>
 
 <div class="w3-container w3-center w3-animate-opacity w3-display-container w3-sepia">
-  <img src="bg/bg.jpg" style="width:100%">
+  <img src="{{ URL::asset('/bg.jpg') }}" />
 </div>
 
-<div class="w3-display-topmiddle w3-large w3-container w3-light-grey w3-animate-opacity">
+<div class="w3-display-topmiddle w3-large w3-container w3-light-grey w3-animate-opacity article">
     臺中自日治時期即為臺灣文壇的中心，從傳統文學社團櫟社、臺灣文社，開風氣之先，引領全臺，到新文學組織臺灣文藝聯盟及其相關文學刊物，乃至林獻堂所領導的臺灣文化協會，都以臺中為主要活動據點，而市區的中央書局不但是當時文學家、藝術家活動的根據地，也是新文化的傳播站；延續到戰後，臺中則是銀鈴會、笠詩社等本土文學社團的發跡地。以上史實，充分彰顯臺中作為臺灣文學發展中心的光榮傳統與重要地位，「文化城」之美名可謂其來有自。<p>
       <br>
       <br>
@@ -71,7 +79,7 @@
   </div>
 
 <div class="w3-container w3-center w3-animate-opacity w3-display-bottomright">
-  <button class="button" style="vertical-align:middle"><span>了解更多 </span>
+  <a href="{{ url('/activity') }}" id="item"><button class="button" style="vertical-align:middle" ><span>了解更多 </span></button></a>
 </div>
 </body>
 </html>
