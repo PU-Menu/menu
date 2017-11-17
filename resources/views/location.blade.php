@@ -32,6 +32,8 @@
     .content {
         text-align: center;
         width: 80%;
+        margin-top: 250px;
+        margin-bottom:50px;
     }
 
     .title {
