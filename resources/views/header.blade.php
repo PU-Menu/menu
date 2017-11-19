@@ -18,13 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=David+Libre|Hind:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('/css/reset.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/style.css') }}">
-    
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -51,23 +44,7 @@
 
 <div id="wrapper">
     <header class="cd-auto-hide-header" >
-<!--
-        <nav class="cd-primary-nav">
-            <a href="#cd-navigation" class="nav-trigger">
-                <span>
-                    <em aria-hidden="true"></em>
-                    Menu
-                </span>
-            </a> 
 
-            <ul id="cd-navigation">
-                
-            </ul>
-        </nav> 
--->
-        <!-- 
-         <a href="#0"><img src="{{ URL::asset('/logo.jpg') }}" alt="Logo" class="logo_img" width="80px" height="80px"></a>
--->
             <nav class="cd-secondary-nav">
             <ul>
                 <li><a href="{{ url('/activity') }}">活動</a></li>
