@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
-<title>作家一覽</title>
+
 <style>
 
-.text-secondary{
+.display-1{
   text-align: center;
   position: relative;
     top:50px;
+    font-size: 84px;
 }
 </style>
 </head>
@@ -24,9 +25,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-secondary">
-            <font size="7" style="">Author</font>
-          </h1>
+          <h1 class="display-1">Author</h1>
+          
         </div>
       </div>
     </div>
@@ -66,5 +66,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
+<footer>
+  <h5 class="text-right">
+    資料來源：http://www.tlm.taichung.gov.tw/form/index.aspx?Parser=2,8,46
+  </h5>
+</footer>
 @stop 
 </html>
