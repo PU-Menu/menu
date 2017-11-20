@@ -12,7 +12,7 @@
 */
 
 //連接到Home.php中的index
-Route::get('/', 'Backstage@index');
+
 
 Route::get('/menu_list', 'Backstage@menu_list')->name('allData');//菜單列表
 Route::get('/add_menu', 'Backstage@add_menu');//新增菜單
@@ -32,6 +32,6 @@ Route::get('/menu', 'MenuController@menu');
 Route::get('/dish1', 'MenuController@dish1');
 Route::get('/dish2', 'MenuController@dish2');
 
-Route::get('/index','MenuController@index');
+Route::get('/','MenuController@index');
 Route::get('/activity','MenuController@activity');
 

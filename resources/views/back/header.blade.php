@@ -70,10 +70,6 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
                         <li class="divider"></li>
                         <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
@@ -90,11 +86,6 @@
                         <li>
                             <a href="{{ url('/menu_list') }}"><i class="fa fa-dashboard fa-fw"></i> 菜單列表</a>
                         </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        
-                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
