@@ -23,19 +23,24 @@
 
 <style>
     
-    .logo_img{
-        border-radius: 40px;
+    .logo-img{
+        /* border-radius: 40px;
         position:relative;
         left:30px;
         margin-top:5px;
-        margin-bottom:5px;
+        margin-bottom:5px; */
+        position: absolute;
+        z-index: 1;
+        
+        top:-6px;
+        left: 5%;
     }
 
     a:hover{
         text-decoration:none;
     }
     
-    main_nav{
+    .logo{
         
     }
 </style>
@@ -43,9 +48,8 @@
 
 
 <div id="wrapper">
-    <header class="cd-auto-hide-header" >
-
-            <nav class="cd-secondary-nav">
+    <header class="cd-auto-hide-header" >      
+        <nav class="cd-secondary-nav">
             <ul>
                 <li><a href="{{ url('/activity') }}">活動</a></li>
                 <li><a href="{{ url('/menu') }}">菜單</a></li>
@@ -53,6 +57,7 @@
                 <li><a href="{{ url('/location') }}">位置</a></li>
             </ul>
         </nav> <!-- .cd-secondary-nav -->
+        <a href="{{ url('/') }}"><img src="{{ URL::asset('logo_burn.png') }}" alt="Kekisha"width="80px" height="80px" class="logo-img"></a>
         @yield('header')
     </header> <!-- .cd-auto-hide-header -->
 
