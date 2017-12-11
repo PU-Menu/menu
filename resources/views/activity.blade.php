@@ -83,7 +83,10 @@
     <div class="w3-container w3-center w3-animate-opacity content2">
       <div class="row">
         <div class="col-md-12">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/CxyhanBrK0k" frameborder="0" allowfullscreen></iframe><p><br>
+          <div class="col-md-6">
+            <iframe width="600" height="450" src="https://www.youtube.com/embed/CxyhanBrK0k" frameborder="0" allowfullscreen></iframe>
+          </div>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRekisha06%2F&tabs=timeline%2Cevents%2Cmessages&width=300&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><p><br>
           耕讀分享 x 季節款待<p>
           <br>
           <br>
