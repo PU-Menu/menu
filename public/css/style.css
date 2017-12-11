@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  color: #8F3985;
+  color: white;
   text-decoration: none;
 }
 
@@ -324,6 +324,12 @@ a {
     height: 70px;
     overflow: visible;
   }
+
+  .cd-secondary-nav-footer {
+    height: 300px;
+    overflow: visible;
+  }
+
   .cd-secondary-nav ul {
     /* reset mobile style */
     display: block;

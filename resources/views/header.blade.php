@@ -40,9 +40,32 @@
         text-decoration:none;
     }
     
-    .logo{
-        
+    footer{
+        background-color:#25283D;
+        color: #FFFFFF;
+        padding: 30px;
     }
+
+    .my-footer-col {
+        text-align: center;
+        font-size:20px;
+    }
+
+    .my-footer-col-title {
+        font-size: 30px; 
+        font-weight:bold; 
+        margin:10px;
+    }
+
+    .my-footer-col-li {
+        margin: 7px;
+    }
+    
+    .footer-copywrite {
+        text-align:center;
+    }
+        
+    
 </style>
 
 
@@ -64,6 +87,54 @@
     <div id="page-wrapper">
             @yield('content')
     </div>
+
+    <footer class="cd-auto-hide-footer" >      
+        <nav class="cd-secondary-nav-footer">
+            <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4 my-footer-col">
+                        <ul>    
+                            <li class="my-footer-col-title">聯絡我們</li>
+                            <li class="my-footer-col-li">程式城市</li>
+                            <li class="my-footer-col-li">地址 台中市西區自立街6號</li>
+                            <li class="my-footer-col-li">電話 (04)3704-6848</li>
+                            <li class="my-footer-col-li"><a style="color: white;" href="https://www.facebook.com/Rekisha06/">Facebook 粉絲專頁</a></li>
+                            <li class="my-footer-col-li"><a style="color: white;" href="#">意見回饋</a></li>
+                            <li class="my-footer-col-li"><a style="color: white;" href="http://www.pu.edu.tw/">Located in【 靜宜大學 】</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4 my-footer-col">
+                        <ul>    
+                            <li class="my-footer-col-title">研發人員</li>
+                            <li class="my-footer-col-li">許智堯</li>
+                            <li class="my-footer-col-li">謝坤傑</li>
+                            <li class="my-footer-col-li">劉學哲</li>
+                            <li class="my-footer-col-li">金麒</li>
+                    </div>
+                    <div class="footer-col col-md-4 my-footer-col">
+                        <ul>    
+                            <li class="my-footer-col-title">技術指導</li>
+                            <li class="my-footer-col-li">葉肩宇</li>
+                            <li class="my-footer-col-li">葉介山</li>
+                            <li class="my-footer-col-li">蘇偉順</li>
+                            <li class="my-footer-col-li">郭士煒</li>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container footer-copywrite">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Try Catch 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+        @yield('footer')
+    </footer> 
     <!-- /#page-wrapper -->
 
 </div>
