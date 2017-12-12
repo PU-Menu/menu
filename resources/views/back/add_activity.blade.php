@@ -21,22 +21,18 @@
         @stop
 
         @section('content')
-            <p>新增菜單</p>
-            <form action="{{ url('/input_menu') }}" method="post">
+            <p>新增活動</p>
+            <form action="{{ url('/input_activity') }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="exampleInputPassword1">菜單名稱</label>
-                    <input  name="menu" type="text" class="form-control" id="exampleInputPassword1" placeholder="菜單名稱">
+                    <label for="exampleInputPassword1">活動標題</label>
+                    <input  name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="菜單名稱">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">作者</label>
-                    <input  name="author" type="text" class="form-control" id="exampleInputPassword1" placeholder="作者">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">文章內容</label>
+                    <label for="exampleFormControlTextarea1">活動內容</label>
                     <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:150%;"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">新增</button>
-                <a href="{{ url('/menu_list') }}" class="btn btn-warning">取消</a>
+                <a href="{{ url('/back_activitylist') }}" class="btn btn-warning">取消</a>
             </form>
         @stop
