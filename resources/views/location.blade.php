@@ -86,4 +86,8 @@
     </div>
 </div>
 @stop
+
+@section('footer')
+    
+@stop
 </body>
