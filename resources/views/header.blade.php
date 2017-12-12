@@ -96,7 +96,7 @@
                     <div class="footer-col col-md-4 my-footer-col">
                         <ul>    
                             <li class="my-footer-col-title">聯絡我們</li>
-                            <li class="my-footer-col-li">程式城市</li>
+                            <li class="my-footer-col-li">櫟舍文學餐廳 Rekisha</li>
                             <li class="my-footer-col-li">地址 台中市西區自立街6號</li>
                             <li class="my-footer-col-li">電話 (04)3704-6848</li>
                             <li class="my-footer-col-li"><a style="color: white;" href="https://www.facebook.com/Rekisha06/">Facebook 粉絲專頁</a></li>
@@ -105,21 +105,19 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4 my-footer-col">
-                        <ul>    
-                            <li class="my-footer-col-title">研發人員</li>
-                            <li class="my-footer-col-li">許智堯</li>
-                            <li class="my-footer-col-li">謝坤傑</li>
-                            <li class="my-footer-col-li">劉學哲</li>
-                            <li class="my-footer-col-li">金麒</li>
+                        <ul>   
+                            <li class="my-footer-col-title">網路創新服務設計</li>
+                            <li class="my-footer-col-li">鍾韻茹</li>
+                            <li class="my-footer-col-li">吳怡蓉</li>
+                            <li class="my-footer-col-li">蔡妙欣</li>
+                            <li class="my-footer-col-li">金正言</li>
                     </div>
                     <div class="footer-col col-md-4 my-footer-col">
                         <ul>    
-                            <li class="my-footer-col-title">技術指導</li>
-                            <li class="my-footer-col-li">葉肩宇</li>
-                            <li class="my-footer-col-li">葉介山</li>
-                            <li class="my-footer-col-li">蘇偉順</li>
-                            <li class="my-footer-col-li">郭士煒</li>
-                        
+                            <li class="my-footer-col-title">城市意象與行銷企劃</li>
+                            <li class="my-footer-col-li">尤姿雅</li>
+                            <li class="my-footer-col-li">李佳婍</li>
+                            <li class="my-footer-col-li">黃佑歆</li>
                     </div>
                 </div>
             </div>
