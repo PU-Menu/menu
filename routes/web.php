@@ -13,14 +13,21 @@
 
 //連接到Home.php中的index
 
-
-Route::get('/menu_list', 'Backstage@menu_list')->name('allData');//菜單列表
+//後台:菜單
+Route::get('/back_menulist', 'Backstage@menu_list');//菜單列表
 Route::get('/add_menu', 'Backstage@add_menu');//新增菜單
 Route::post('/edit_menu', 'Backstage@edit_menu');//修改菜單
-Route::post('/input', 'Backstage@input');//菜單資料匯入資料庫
-Route::post('/delete', 'Backstage@delete');//刪除菜單
-Route::post('/update', 'Backstage@update');//更新菜單
+Route::post('/input_menu', 'Backstage@input_menu');//菜單資料匯入資料庫
+Route::post('/delete_menu', 'Backstage@delete_menu');//刪除菜單
+Route::post('/update_menu', 'Backstage@update_menu');//更新菜單
 
+//後台:活動
+Route::get('/back_activitylist', 'Backstage@activity_list');//活動列表
+Route::get('/add_activity', 'Backstage@add_activity');//新增活動
+Route::post('/edit_activity', 'Backstage@edit_activity');//修改活動
+Route::post('/input_activity', 'Backstage@input_activity');//活動資料匯入資料庫
+Route::post('/delete_activity', 'Backstage@delete_activity');//刪除活動
+Route::post('/update_activity', 'Backstage@update_activity');//更新菜單
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

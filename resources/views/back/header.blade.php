@@ -84,7 +84,10 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="{{ url('/menu_list') }}"><i class="fa fa-dashboard fa-fw"></i> 菜單列表</a>
+                            <a href="{{ url('/back_menulist') }}"><i class="fa fa-dashboard fa-fw"></i> 菜單列表</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/back_activitylist') }}"><i class="fa fa-dashboard fa-fw"></i> 活動列表</a>
                         </li>
                     </ul>
                 </div>

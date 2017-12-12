@@ -22,23 +22,19 @@
         @stop
 
         @section('content')
-            <p>修改菜單</p>
-            <form action="{{ url('/update_menu') }}" method="post">
+            <p>修改活動</p>
+            <form action="{{ url('/update_activity') }}" method="post">
                 {{ csrf_field() }}
                 <input type="hidden" name="id" value="{{ $data['id'] }}">
                 <div class="form-group">
-                    <label for="exampleInputPassword1">菜單名稱</label>
-                    <input  name="menu" type="text" class="form-control" id="exampleInputPassword1" placeholder="菜單名稱" value="{{ $data['name'] }}">
+                    <label for="exampleInputPassword1">活動標題</label>
+                    <input  name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="菜單名稱" value="{{ $data['title'] }}">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">作者</label>
-                    <input  name="author" type="text" class="form-control" id="exampleInputPassword1" placeholder="作者" value="{{ $data['author'] }}">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">文章內容</label>
+                    <label for="exampleFormControlTextarea1">活動內容</label>
                     <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:150%;">{{$data['content']}}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">修改</button>
-                <a href="{{ url('/menu_list') }}" class="btn btn-warning">取消</a>
+                <a href="{{ url('/back_activitylist') }}" class="btn btn-warning">取消</a>
             </form>
         @stop
