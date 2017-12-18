@@ -89,6 +89,9 @@
                         <li>
                             <a href="{{ url('/back_activitylist') }}"><i class="fa fa-dashboard fa-fw"></i> 活動列表</a>
                         </li>
+                        <li>
+                            <a href="{{ url('/back_authorlist') }}"><i class="fa fa-dashboard fa-fw"></i> 作者列表</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

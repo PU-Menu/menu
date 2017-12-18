@@ -17,11 +17,11 @@ class Backstage extends Controller
     {
         $allData = DB::select('select * from menu_table');
         
-        return view('/back/menu_list',['allData'=>$allData]);
+        return view('back.menu_list',['allData'=>$allData]);
     }
     public function add_menu()//新增菜單頁面
     {
-        return view('/back/add_menu');
+        return view('back.add_menu');
     }
     public function edit_menu()//新增菜單頁面
     {
@@ -92,12 +92,12 @@ class Backstage extends Controller
     }
     public function input_activity(Request $request)//菜單資料匯入資料庫
     {
-        $menu = request()->input('title');
+        $title = request()->input('title');
         $content = request()->input('content');
     
         DB::table('activity')->insert(
             [
-                'title' =>  $menu,
+                'title' =>  $title,
                 'activity_content' =>  $content,
             ]
         );
@@ -122,5 +122,58 @@ class Backstage extends Controller
         $id = request()->input('id');
         DB::table('activity')->where('activity_id', '=' ,$id)->delete();
         return redirect('/back_activitylist');
+    }
+    //作者管理
+    public function author_list()
+    {
+        $allData = DB::select('select * from author');
+
+        return view('/back/author_list',compact('allData'));
+    }
+    public function add_author()//新增作者頁面
+    {
+        return view('/back/add_author');
+    }
+    public function edit_author()//新增作者頁面
+    {
+        $id = request()->input('id');
+        $name = request()->input('name');
+        $content = request()->input('content');
+
+        $data = array("id" => $id, "name" => $name, "content" => $content,);
+        return view('/back/edit_author',compact('data'));
+    }
+    public function input_author(Request $request)//作者資料匯入資料庫
+    {
+        $name = request()->input('name');
+        $content = request()->input('content');
+    
+        DB::table('author')->insert(
+            [
+                'name' =>  $name,
+                'content' =>  $content,
+            ]
+        );
+        return redirect('/back_authorlist');
+    }
+    public function update_author(Request $request)//更新作者資料
+    {  
+        $id = request()->input('id');
+        $name = request()->input('name');
+        $content = request()->input('content');
+
+        DB::table('author')->where('id', '=', $id)->update(
+            [
+                'name' =>  $name,
+                'content' =>  $content,
+            ]   
+        );
+        return redirect('/back_authorlist');
+    }
+    public function delete_author(Request $request)//刪除作者資料
+    {  
+        $id = request()->input('id');
+        DB::table('author')->where('id', '=' ,$id)->delete();
+        return redirect('/back_authorlist');
     }
 }

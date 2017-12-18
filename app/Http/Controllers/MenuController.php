@@ -48,8 +48,6 @@ class MenuController extends Controller
     {
         return view('Menu_item2');
     }
-
-
     public function index()
     {
         return view('index');
@@ -57,6 +55,10 @@ class MenuController extends Controller
     public function activity()
     {
         return view('activity');
+    }
+    public function test()
+    {
+        return view('layouts.layout');
     }
 }
 
