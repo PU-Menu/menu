@@ -12,7 +12,7 @@
 */
 
 //連接到Home.php中的index
-
+Route::get('/test', 'MenuController@test');//菜單列表
 //後台:菜單
 Route::get('/back_menulist', 'Backstage@menu_list');//菜單列表
 Route::get('/add_menu', 'Backstage@add_menu');//新增菜單
@@ -28,6 +28,15 @@ Route::post('/edit_activity', 'Backstage@edit_activity');//修改活動
 Route::post('/input_activity', 'Backstage@input_activity');//活動資料匯入資料庫
 Route::post('/delete_activity', 'Backstage@delete_activity');//刪除活動
 Route::post('/update_activity', 'Backstage@update_activity');//更新菜單
+
+//後台:作者
+Route::get('/back_authorlist', 'Backstage@author_list');//活動列表
+Route::get('/add_author', 'Backstage@add_author');//新增活動
+Route::post('/edit_author', 'Backstage@edit_author');//修改活動
+Route::post('/input_author', 'Backstage@input_author');//活動資料匯入資料庫
+Route::post('/delete_author', 'Backstage@delete_author');//刪除活動
+Route::post('/update_author', 'Backstage@update_author');//更新菜單
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
