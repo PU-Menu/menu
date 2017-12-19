@@ -66,7 +66,7 @@
 				</div>
 
 				<div class="cd-project-info">
-					@include('activity')
+				@include('activity')					
 				</div> <!-- .cd-project-info -->
 			</li>
 
@@ -79,7 +79,7 @@
 				</div>
 
 				<div class="cd-project-info">
-				@include('menu')
+				@include('Menu')
 				</div> <!-- .cd-project-info -->
 			</li>
 
@@ -92,7 +92,7 @@
 				</div>
 
 				<div class="cd-project-info">
-					@include('author')
+					@include('Author')
 				</div> <!-- .cd-project-info -->
 			</li>
 
