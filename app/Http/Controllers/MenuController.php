@@ -37,7 +37,7 @@ class MenuController extends Controller
 
     public function header()
     {
-        return view('/header');
+        return view('header');
     }
 
     public function dish1()
