@@ -3,6 +3,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <style>
+  .display-1{
+    text-align: center;
+    position: relative;
+      top:50px;
+      font-size: 84px;
+  }
   .content{
     margin-top: 100px;
     font-size: 50px;

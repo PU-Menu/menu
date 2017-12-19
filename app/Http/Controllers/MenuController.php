@@ -60,5 +60,9 @@ class MenuController extends Controller
     {
         return view('layouts.layout');
     }
+    public function all()
+    {
+        return view('all');
+    }
 }
 

@@ -1,6 +1,50 @@
 ﻿@extends('header')
 <html>
+<STYLE TYPE="text/css">
+input.gsc-input {
+  font-size: 13px;
+  outline: none;
+}
+input.gsc-search-button {
+  font-size: 13px;
+}
+</STYLE>
+<div class="left">
+  <div id="searchcontrol">Loading...</div>
+  <link href="http://www.google.com/uds/css/gsearch.css" type="text/css" rel="stylesheet" />
+  <script src="http://www.google.com/uds/api?file=uds.js&v=1.0" type="text/javascript"></script>
+  <script language="Javascript" type="text/javascript">
+  // 載入 Google AJAX Search API (參數 1 - Google API 代碼, 參數 2 - 版本)
+  //google.load("search", "1");
+  google.load('search', '1', {language : 'zh-TW'});
 
+  function OnLoad() {
+      // 建立搜尋控制容器
+      var searchControl = new google.search.SearchControl();
+      // 新增搜尋器
+      // 網頁搜尋
+      //searchControl.addSearcher(new google.search.WebSearch());
+      var webSearch = new google.search.WebSearch();
+      webSearch.setSiteRestriction('http://blog.webgolds.com/');
+      //webSearch.setUserDefinedLabel("網頁");
+      searchControl.addSearcher(webSearch);
+      
+      //影片搜尋
+      //searchControl.addSearcher(new google.search.VideoSearch());
+      //部落格搜尋
+      //searchControl.addSearcher(new google.search.BlogSearch());
+      // 將搜尋結果顯示在網頁中 其中 searchcontrol 為 div (區塊) 名稱 此名稱必須相符
+      searchControl.draw(document.getElementById("searchcontrol"));
+      // 設定預設搜尋項目 即預設開啟時搜尋 Google
+      
+      searchControl.execute("");
+  }
+  //載入頁面時執行OnLoad函式
+  google.setOnLoadCallback(OnLoad);
+  </script>
+
+  <div id="clear"></div>
+</div>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
