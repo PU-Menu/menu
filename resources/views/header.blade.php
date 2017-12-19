@@ -66,7 +66,7 @@
 				</div>
 
 				<div class="cd-project-info">
-					@yield('activity')
+					@include('activity')
 				</div> <!-- .cd-project-info -->
 			</li>
 
@@ -79,7 +79,7 @@
 				</div>
 
 				<div class="cd-project-info">
-				@yield('menu')
+				@include('menu')
 				</div> <!-- .cd-project-info -->
 			</li>
 
@@ -92,7 +92,7 @@
 				</div>
 
 				<div class="cd-project-info">
-					@yield('author')
+					@include('author')
 				</div> <!-- .cd-project-info -->
 			</li>
 
