@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="{{ URL::asset('/css/reset.css') }}"> <!-- CSS reset -->
 	<link rel="stylesheet" href="{{ URL::asset('/css/style-sliding.css') }}"> <!-- Resource style -->
 	<script src="{{ URL::asset('/js/modernizr.js') }}"></script> <!-- Modernizr -->
-  	
+	  
 	<title>櫟舍文學餐廳</title>
 	
 <style>
@@ -47,19 +47,50 @@
 	
 	.my-footer-col-li > a:hover {
 		background-color:white;
-    }
+	}
+	
+	.icon::before{
+		content: "About Us";
+		font-size: 20px;
+		height: 20px;
+		color: white;
+		position: absolute;
+  		top: 13px;
+		right: 13%;
+	}
+
+	.icon::after{
+		/*content: "X";*/
+		font-size: 20px;
+		height: 20px;
+		color: white;
+		position: absolute;
+  		top: 13px;
+  		right: 13%;
+	}
 </style>
 </head>
 <body>
-	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
+	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">
+		
+		<!--
+		<span aria-hidden="true" class="cd-icon"></span>
+		-->
+		<span class="icon" id="btnIcon"></span>
+		
+	</a>
+
 	
+
 	<div class="cd-projects-container">
 		<ul class="cd-projects-previews">
 			<li>
 				<a href="#0">
 					<div class="cd-project-title">
-						<h2>活動</h2>
+						<h2>活動快報</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div>
 				</a>
 			</li>
@@ -67,8 +98,10 @@
 			<li>
 				<a href="#0">
 					<div class="cd-project-title">
-						<h2>菜單</h2>
+						<h2>套餐簡介</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div>
 				</a>
 			</li>
@@ -76,8 +109,10 @@
 			<li>
 				<a href="#0">
 					<div class="cd-project-title">
-						<h2>作者</h2>
+						<h2>作家生平</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div>
 				</a>
 			</li>
@@ -85,8 +120,10 @@
 			<li>
 				<a href="#0">
 					<div class="cd-project-title">
-						<h2>位置</h2>
+						<h2>餐廳資訊</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div>
 				</a>
 			</li>
@@ -96,8 +133,10 @@
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
-						<h2>活動</h2>
+						<h2>活動快報</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div> 
 				</div>
 
@@ -109,8 +148,10 @@
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
-						<h2>菜單</h2>
+						<h2>套餐簡介</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div> 
 				</div>
 
@@ -122,8 +163,10 @@
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
-						<h2>作者</h2>
+						<h2>作家生平</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div> 
 				</div>
 
@@ -135,8 +178,10 @@
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
-						<h2>位置</h2>
+						<h2>套餐簡介</h2>
+						<!--
 						<p>Brief description of the project here</p>
+						-->
 					</div> 
 				</div>
 
@@ -159,18 +204,7 @@
 			<li><a href="#0">Contact us</a></li>
 			-->
 			<div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4 my-footer-col">
-                        <ul>    
-                            <li class="my-footer-col-title">聯絡我們</li>
-                            <li class="my-footer-col-li">櫟舍文學餐廳 Rekisha</li>
-                            <li class="my-footer-col-li">地址 台中市西區自立街6號</li>
-                            <li class="my-footer-col-li">電話 (04)3704-6848</li>
-                            <li class="my-footer-col-li"><a href="https://www.facebook.com/Rekisha06/">Facebook 粉絲專頁</a></li>
-                            <li class="my-footer-col-li"><a href="#">意見回饋</a></li>
-                            <li class="my-footer-col-li"><a href="http://www.pu.edu.tw/">Located in【 靜宜大學 】</a></li>
-                        </ul>
-                    </div>
+                <div class="row"> 
                     <div class="footer-col col-md-4 my-footer-col">
                         <ul>   
                             <li class="my-footer-col-title">網路創新服務設計</li>
@@ -185,6 +219,17 @@
                             <li class="my-footer-col-li">尤姿雅</li>
                             <li class="my-footer-col-li">李佳婍</li>
                             <li class="my-footer-col-li">黃佑歆</li>
+					</div>
+					<div class="footer-col col-md-4 my-footer-col">
+                        <ul>    
+                            <li class="my-footer-col-title">聯絡我們</li>
+							<li class="my-footer-col-li">櫟舍文學餐廳 Rekisha</li>
+							<li class="my-footer-col-li">電話: (04)3704-6848</li>
+                            <li class="my-footer-col-li">地址: <a href="https://www.google.com.tw/maps/place/%E6%AB%9F%E8%88%8D%E6%96%87%E5%AD%B8%E9%A4%90%E5%BB%B3/@24.1393817,120.6700798,17z/data=!3m1!4b1!4m5!3m4!1s0x34693d0c0c2bd251:0xc1cc876a76b8e928!8m2!3d24.1393768!4d120.6722739">台中市西區自立街6號</a></li>
+                            <li class="my-footer-col-li"><a href="https://www.facebook.com/Rekisha06/">Facebook 粉絲專頁</a></li>
+                            <li class="my-footer-col-li"><a href="#">意見回饋</a></li>
+                            <li class="my-footer-col-li"><a href="http://www.pu.edu.tw/">程式城市 Located in【 靜宜大學 】</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
