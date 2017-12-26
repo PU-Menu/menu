@@ -6,7 +6,6 @@ jQuery(document).ready(function($){
 		projects = projectsContainer.find('.cd-projects'),
 		navigationTrigger = $('.cd-nav-trigger'),
 		navigation = $('.cd-primary-nav'),
-		btnIcon = $('.icon'),
 		//if browser doesn't support CSS transitions...
 		transitionsNotSupported = ( $('.no-csstransitions').length > 0);
 
@@ -38,7 +37,6 @@ jQuery(document).ready(function($){
 				//close main navigation
 				navigationTrigger.removeClass('nav-visible');
 				navigation.removeClass('nav-clickable nav-visible');
-				btnIcon.style.content = "X";
 				if(transitionsNotSupported) projectPreviews.removeClass('slide-out');
 				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
 			} else {
