@@ -60,7 +60,7 @@
 	}
 
 	.icon::after{
-		content: "X";
+		/*content: "X";*/
 		font-size: 20px;
 		height: 20px;
 		color: white;
