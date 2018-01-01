@@ -62,7 +62,7 @@ body{
       <div class="row">
         <div class="col-md-12">
           <p class="lead">
-            <font size="7" class="">張文環</font>（1909─1978）</p>
+            <font size="7" class="">張文環</font><font size="5">（1909─1978）</font></p>
         </div>
       </div>
       <div class="row">

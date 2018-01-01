@@ -1,12 +1,51 @@
-
+﻿
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src ="{{ URL::asset('/js/jquery-3.2.1.min.js') }}"> </script>
+  <script src ="{{ URL::asset('/js/jquery.fancybox.min.js') }}"></script>
+  <link rel ="stylesheet" type ="text/css" href ="{{ URL::asset('/css/jquery.fancybox.min.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
-
+  
 <style>
+/*JQuery*/
+.animated-modal {
+  max-width: 550px;
+  border-radius: 4px;
+  overflow: hidden;
+  
+  transform: translateY(-50px);
+  transition: all .7s;
+}
 
+.animated-modal h2,
+.animated-modal p {
+  transform: translateY(-50px);
+  opacity: 0;
+  
+  transition-property: transform, opacity;
+  transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal h2 {
+  transition-delay: .1s;
+}
+
+.fancybox-slide--current .animated-modal p {
+  transition-delay: .3s;
+}
+
+/*end*/
 .text-center{
    vertical-align:middle;
    text-align:center;
@@ -49,9 +88,11 @@
       </div>
     </div>
   </div>
+
   <div class="py-5">
     <div class="container">
-      
+      <div class="grid">
+        <a data-fancybox data-src="#modal1" href="javascript:;"  class="btn">
       <div class="row">
         <div class="col-md-12">
           <h1 class="subtitle">水果優格沙拉套餐</h1>
@@ -59,7 +100,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img class="img-fluid d-block" src="{{ URL::asset('/dish1.jpg') }}" width="400" height="300"  style="border:2px #ccc solid;padding:10px;">
+          <img class="img-fluid d-block" src="dish1.jpg" width="400" height="300"  style="border:2px #ccc solid;padding:10px;">
         </div>
         
         <div class="col-md-8">
@@ -73,11 +114,22 @@
         </div>
       </div>
     </a>
+    <div style="display: none" id="modal1" max-width="600px";>
+      <h1 style="line-height: 50px">水果優格沙拉套餐 </h1>
+      <br>
+      <img src="dish1.jpg" width="400" height="300"  style="border:2px #ccc solid;padding:10px;" />
+      <br>
+      <p><h3>炎炎夏日首選！清爽沙拉與新鮮水果，淋上酸甜優格醬，永不敗的完美搭配。<br> 
+            <br>*套餐含一杯飲品。</h3></p>
+    </div>
+    </div>
     </div>
   </div>
 
   <div class="py-5">
     <div class="container">
+      <div class="grid">
+        <a data-fancybox data-src="#modal2" href="javascript:;"  class="btn">
       <div class="row">
         <div class="col-md-12">
           <h1 class="subtitle">手作披薩餃套餐</h1>
@@ -85,7 +137,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img class="img-fluid d-block"  src="{{ URL::asset('/dish2.jpg') }}" width="400" height="300"  style="border:2px #ccc solid;padding:10px;">
+          <img class="img-fluid d-block"  src="dish2.jpg" width="400" height="300"  style="border:2px #ccc solid;padding:10px;">
         </div>
         <div class="col-md-8">
           <br>
@@ -97,11 +149,21 @@
           </p>
         </div>
       </div>
+    </a>
+      <div style="display: none" id="modal2" max-width="600px";>
+      <h1 style="line-height: 50px">手作披薩餃套餐 </h1>
+      <br>
+      <img src="dish2.jpg" width="400" height="300"  style="border:2px #ccc solid;padding:10px;" />
+      <br>
+      <p><h3>職人每日手作，烤至金黃的披薩餃包裹滿滿餡料，飽足又不油膩，美味滿分。<br>
+          <br> 
+            <br>*套餐含一杯飲品。</h3></p>
+    </div>
+    </div>
     </div>
   </div>
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+ 
 </body>
-
-</html>
