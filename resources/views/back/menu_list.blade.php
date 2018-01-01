@@ -22,6 +22,7 @@
                 <th>#</th>
                 <th>名稱</th>
                 <th>作者</th>
+                <th>圖片</th>
                 <th>建立時間</th>
                 <th>修改</th>
                 <th>刪除</th>
@@ -33,6 +34,7 @@
                     <td>{{ $i++ }}</td>
                     <td>{{ $row->menu_name }}</td>
                     <td>{{ $row->menu_author }}</td>
+                    <td><img src="{{url('/img/'.$row->img)}}" alt="" width="100px;" height="100px"></td>
                     <td>{{ $row->created_at }}</td>
                     <td>
                         <form action="{{ url('/edit_menu') }}" method="post">

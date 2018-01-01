@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('login2', 'LoginController@show');
+Route::post('login2', 'LoginController@login');
+Route::get('logout', 'LoginController@logout');
 //連接到Home.php中的index
 Route::get('/test', 'MenuController@test');//菜單列表
 //後台:菜單

@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use DB;
 use View;
 class Backstage extends Controller
@@ -10,8 +11,9 @@ class Backstage extends Controller
     
     public function index()//後台首頁
     {
-        return view('/back/header');
+        return view('/back/login');
     }
+
     //菜單
     public function menu_list()//現有菜單列表
     {
@@ -38,12 +40,22 @@ class Backstage extends Controller
         $menu = request()->input('menu');
         $content = request()->input('content');
         $author = request()->input('author');
-    
+        $file = Input::file('img');
+        $destination_path = public_path().'/img/';
+        $extension = $file->getClientOriginalExtension();
+        $file_name = strval(time()).str_random(5).'.'.$extension;
+        if (Input::hasFile('img')) {
+            $upload_success = $file->move($destination_path, $file_name);
+            echo "img upload success!";
+        } else {
+            echo "img upload failed!";
+        }
         DB::table('menu_table')->insert(
             [
                 'menu_name' =>  $menu,
                 'menu_author' => $author,
                 'menu_content' =>  $content,
+                'img' => $file_name
             ]
         );
         return redirect('/back_menulist');
@@ -94,13 +106,16 @@ class Backstage extends Controller
     {
         $title = request()->input('title');
         $content = request()->input('content');
-    
+        
+        $file_name = strval(time()).str_random(5).'.'.$extension;
+
         DB::table('activity')->insert(
             [
                 'title' =>  $title,
                 'activity_content' =>  $content,
             ]
         );
+        
         return redirect('/back_activitylist');
     }
     public function update_activity(Request $request)//更新活動資料
@@ -147,11 +162,21 @@ class Backstage extends Controller
     {
         $name = request()->input('name');
         $content = request()->input('content');
-    
+        $file = Input::file('img');
+        $destination_path = public_path().'/img/';
+        $extension = $file->getClientOriginalExtension();
+        $file_name = strval(time()).str_random(5).'.'.$extension;
+        if (Input::hasFile('img')) {
+            $upload_success = $file->move($destination_path, $file_name);
+            echo "img upload success!";
+        } else {
+            echo "img upload failed!";
+        }
         DB::table('author')->insert(
             [
                 'name' =>  $name,
                 'content' =>  $content,
+                'img' => $file_name
             ]
         );
         return redirect('/back_authorlist');
