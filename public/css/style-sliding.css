@@ -31,7 +31,7 @@ Patterns - reusable parts of our design
 .cd-text-replace {
   /* replace text with image */
   color: transparent;
-  text-indent: 100%;
+  /*text-indent: 100%;*/
   overflow: hidden;
   white-space: nowrap;
 }
@@ -47,8 +47,8 @@ Menu trigger
   top: 24px;
   right: 5%;
   height: 52px;
-  width: 52px;
-  border-radius: 50%;
+  width: 120px;
+  border-radius: 10%;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
@@ -395,7 +395,7 @@ Projects
   width: 100%;
   top: calc(50% - 20px);
   left: 0;
-  color: #ffffff;
+  color: #000000;
   -webkit-transform: translateY(-37.5vh);
   -moz-transform: translateY(-37.5vh);
   -ms-transform: translateY(-37.5vh);
@@ -444,7 +444,8 @@ Projects
   transition: transform 0.3s 0.3s;
 }
 .cd-project-title h2 {
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
+  font-size: 4rem;
   line-height: 1.5;
   font-weight: 700;
 }

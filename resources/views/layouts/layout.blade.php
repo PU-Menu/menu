@@ -47,7 +47,7 @@
 			<li>
 				<a href="#0">
 					<div class="cd-project-title">
-						<h2>作者</h2>
+						<h2>位置</h2>
 						<p>Brief description of the project here</p>
 					</div>
 				</a>
@@ -103,7 +103,7 @@
 				</div>
 
 				<div class="cd-project-info">
-					@yield('position')
+					@yield('location')
 				</div> <!-- .cd-project-info -->
 			</li>
 		</ul> <!-- .cd-projects -->
