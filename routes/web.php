@@ -47,6 +47,7 @@ Route::get('/header', 'MenuController@header');
 Route::get('/author', 'MenuController@author');
 Route::get('/menu', 'MenuController@menu');
 Route::get('/all', 'MenuController@all');
+Route::get('/orderSeat', 'MenuController@orderSeat');
 
 
 Route::get('/dish1', 'MenuController@dish1');

@@ -66,5 +66,9 @@ class MenuController extends Controller
     {
         return view('all');
     }
+    public function orderSeat()
+    {
+        return view('orderSeat');
+    }
 }
 
