@@ -26,13 +26,13 @@
 .button {
   display: inline-block;
   border-radius: 10px;
-  background-color: #CD853F;
+  background-color:  #6d9351;
   border: none;
   color: black;
   text-align: center;
   font-size: 28px;
   padding: 10px;
-  width: 180px;
+  width: 200px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -69,6 +69,7 @@
   border-radius: 5px;
   font-size: 40px;
 }
+
 body{
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -84,7 +85,7 @@ body{
         <div class="col-md-3">
           
         </div>
-        <div class="col-md-6 w3-center w3-animate-opacity article">
+        <div class="col-md-12 w3-center w3-animate-opacity article">
           文學食旅，無所<b>味</b>懼 
           <h2>櫟社文學餐廳</h2>
         </div>
@@ -92,11 +93,14 @@ body{
           
         </div>
       </div>
+
+      <div class="col-md-12 w3-container w3-center w3-animate-opacity">
+      <a href="{{ url('/header') }}" id="item"><button class="button" style="vertical-align:middle" ><span>瞭解更多？ </span></button></a>
     </div>
 
-    <div class="w3-container w3-center w3-animate-opacity w3-display-bottomright">
-      <a href="{{ url('/header') }}" id="item"><button class="button" style="vertical-align:middle" ><span>了解更多 </span></button></a>
     </div>
+
+    
     
   
 
