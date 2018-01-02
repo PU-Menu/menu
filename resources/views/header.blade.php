@@ -178,7 +178,7 @@
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
-						<h2>套餐簡介</h2>
+						<h2>餐廳資訊</h2>
 						<!--
 						<p>Brief description of the project here</p>
 						-->
