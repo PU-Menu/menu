@@ -49,11 +49,12 @@ Menu trigger
   height: 52px;
   width: 120px;
   border-radius: 10%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
 }
+
 .cd-nav-trigger .cd-icon,
 .cd-nav-trigger .cd-icon::before,
 .cd-nav-trigger .cd-icon::after {

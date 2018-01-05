@@ -65,9 +65,27 @@
 		height: 20px;
 		color: white;
 		position: absolute;
-  		top: 13px;
-  		right: 13%;
+  		top: 20px;
+  		right: 5%;
 	}
+	
+	.btnHome{
+		height: 70px;
+		width: 70px;
+		position: fixed;
+		top: 24px;
+  		left: 5%;
+		z-index: 4;
+		/*background-color: rgba(255, 255, 255, 0.7);*/
+		/*background-color: rgba(5, 112, 56, 0.8);*/
+		/*border-radius: 50%;*/
+	}
+
+	.btnHome:hover{
+		background-color: rgba(0, 0, 0, 1);
+		/*background-color: rgba(5, 112, 56, 0.8);*/
+	}
+
 </style>
 </head>
 <body>
@@ -79,9 +97,10 @@
 		<span class="icon" id="btnIcon"></span>
 		
 	</a>
-
+	<a href="{{ url('/') }}">
+		<img class="btnHome" src="{{ URL::asset('/home.png') }}" />
+	</a>
 	
-
 	<div class="cd-projects-container">
 		<ul class="cd-projects-previews">
 			<li>
