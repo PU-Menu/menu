@@ -88,7 +88,7 @@
   </div>
 </div>
 <?php $i=0; ?>
-@foreach($allData as $row)
+@foreach($menuData as $row)
 
   <div class="py-5">
     <div class="container">

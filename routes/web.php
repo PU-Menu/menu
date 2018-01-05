@@ -10,11 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('login2', 'LoginController@show');
-Route::post('login2', 'LoginController@login');
-Route::get('logout', 'LoginController@logout');
+
+
 //連接到Home.php中的index
 Route::get('/test', 'MenuController@test');//菜單列表
+
+//後台:管理員
+Route::get('back_login', 'Backstage@index');//管理員登入
+Route::get('back_logout', 'Backstage@logout');//管理員登出
+Route::post('back_login', 'Backstage@session');//判斷是否有此管理員
+Route::get('/back_memberlist', 'Backstage@member_list');//管理員列表
+Route::get('/add_member', 'Backstage@add_member');//新增管理員
+Route::post('/edit_member', 'Backstage@edit_member');//修改密碼
+Route::post('/input_member', 'Backstage@input_member');//管理員資料匯入資料庫
+Route::post('/delete_member', 'Backstage@delete_member');//刪除管理員
+Route::post('/update_member', 'Backstage@update_member');//更新管理員
 //後台:菜單
 Route::get('/back_menulist', 'Backstage@menu_list');//菜單列表
 Route::get('/add_menu', 'Backstage@add_menu');//新增菜單

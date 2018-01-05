@@ -12,6 +12,12 @@
   	
 	<title>Sliding Panels Template | CodyHouse</title>
 </head>
+<style>
+	img{
+		width: 100px;
+		height: 100px;
+	}
+</style>
 <body>
 	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
 	

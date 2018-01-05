@@ -38,8 +38,10 @@ class MenuController extends Controller
 
     public function header()
     {
-        $allData = DB::select('select * from menu_table');
-        return view('header',['allData'=>$allData]);
+        $menuData = DB::select('select * from menu_table');
+        $authorData = DB::select('select * from author');
+        $activityData = DB::select('select * from activity');
+        return view('header',['activityData' => $activityData, 'menuData' => $menuData, 'authorData' => $authorData]);
     }
 
     public function dish1()

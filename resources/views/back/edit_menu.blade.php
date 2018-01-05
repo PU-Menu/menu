@@ -39,6 +39,6 @@
                     <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:150%;">{{$data['content']}}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">修改</button>
-                <a href="{{ url('/menu_list') }}" class="btn btn-warning">取消</a>
+                <a href="{{ url('/back_menulist') }}" class="btn btn-warning">取消</a>
             </form>
         @stop
