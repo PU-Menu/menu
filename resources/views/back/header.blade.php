@@ -90,13 +90,16 @@
                             </li>
                             @endif
                             <li>
-                                <a href="{{ url('/back_menulist') }}"><i class="fa fa-dashboard fa-fw"></i> 菜單列表</a>
+                                <a href="{{ url('/back_menulist') }}"><i class="fa fa-dashboard fa-fw"></i>菜單列表</a>
                             </li>
                             <li>
-                                <a href="{{ url('/back_activitylist') }}"><i class="fa fa-dashboard fa-fw"></i> 活動列表</a>
+                                <a href="{{ url('/back_activitylist') }}"><i class="fa fa-dashboard fa-fw"></i>活動列表</a>
                             </li>
                             <li>
-                                <a href="{{ url('/back_authorlist') }}"><i class="fa fa-dashboard fa-fw"></i> 作家列表</a>
+                                <a href="{{ url('/back_authorlist') }}"><i class="fa fa-dashboard fa-fw"></i>作家列表</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/back_orderlist') }}"><i class="fa fa-dashboard fa-fw"></i>訂位確認</a>
                             </li>
                         </ul>
                     @endif
