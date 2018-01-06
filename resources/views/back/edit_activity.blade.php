@@ -31,8 +31,8 @@
                     <input  name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="菜單名稱" value="{{ $data['title'] }}">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">活動內容</label>
-                    <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:150%;">{{$data['content']}}</textarea>
+                    <label for="exampleFormControlTextarea1">活動連結</label>
+                    <input type="text" name="content" class="form-control" placeholder="活動連結" value="{{ $data['content'] }}">
                 </div>
                 <button type="submit" class="btn btn-primary">修改</button>
                 <a href="{{ url('/back_activitylist') }}" class="btn btn-warning">取消</a>

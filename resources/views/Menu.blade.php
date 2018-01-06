@@ -78,20 +78,22 @@
 
 <body>
 
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="display-1">Menu</h1>
-        </div>
+<div class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="display-1">Menu</h1>
       </div>
     </div>
   </div>
-@foreach($allData as $row)
+</div>
+<?php $i=0; ?>
+@foreach($menuData as $row)
+
   <div class="py-5">
     <div class="container">
       <div class="grid">
-        <a data-fancybox data-src="#modal1" href="javascript:;"  class="btn">
+        <a data-fancybox data-src="#modal{{++$i}}" href="javascript:;"  class="btn">
           <div class="row">
             <div class="col-md-12">
               <h1 class="subtitle">{{ $row->menu_name }}</h1>
@@ -109,7 +111,7 @@
             </div>
           </div>
         </a>
-        <div style="display: none" id="modal1" max-width="600px";>
+        <div style="display: none" id="modal{{$i}}" max-width="600px";>
           <h1 style="line-height: 50px">{{ $row->menu_name }}</h1>
           <br>
           <img src="{{url('/img/'.$row->img)}}" width="400" height="300"  style="border:2px #ccc solid;padding:10px;" />

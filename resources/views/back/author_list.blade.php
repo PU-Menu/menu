@@ -15,8 +15,8 @@
     @stop
 
     @section('content')
-        <p>作者列表</p>
-        <a href="{{ url('/add_author') }}" class="btn btn-info">新增作者</a><br/><br/>
+        <p>作家列表</p>
+        <a href="{{ url('/add_author') }}" class="btn btn-info">新增作家</a><br/><br/>
         <table class="table table-bordered">
             <tr>
                 <th>#</th>

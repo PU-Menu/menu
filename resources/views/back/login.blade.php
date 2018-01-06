@@ -12,15 +12,14 @@
         </style>
     </head>
     <body>
-        @if ($errors->has('fail'))
-            <div class="fail">{{ $errors->first('fail') }}</div>
-        @endif
-        {!! Form::open(['url'=>'login', 'method'=>'post']) !!}
-            {!! Form::label('account', 'Account') !!}
-            <!-- {{ Form::text('account') }}
-            {{ Form::label('password', 'Password') }}
-            {{ Form::password('password') }}
-            {{ Form::submit('Login') }} -->
-        {!! Form::close() !!}
+        <center>
+            <h1>後台登入</h1>
+            <form action="{{ url('/back_login') }}" method="post">
+                {{ csrf_field() }}
+                帳號:<input type="text" name="account">
+                密碼:<input type="password" name="password">
+                <input type="submit" value="登入">
+            </form>
+        </center>
     </body>
 </html

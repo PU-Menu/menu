@@ -71,7 +71,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{{ url('/back_logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -82,17 +82,24 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="{{ url('/back_menulist') }}"><i class="fa fa-dashboard fa-fw"></i> 菜單列表</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/back_activitylist') }}"><i class="fa fa-dashboard fa-fw"></i> 活動列表</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/back_authorlist') }}"><i class="fa fa-dashboard fa-fw"></i> 作者列表</a>
-                        </li>
-                    </ul>
+                    @if($_SESSION['permission']>=1)
+                        <ul class="nav" id="side-menu">
+                            @if($_SESSION['permission']==2)
+                            <li>
+                                <a href="{{ url('/back_memberlist') }}"><i class="fa fa-dashboard fa-fw"></i>管理員列表</a>
+                            </li>
+                            @endif
+                            <li>
+                                <a href="{{ url('/back_menulist') }}"><i class="fa fa-dashboard fa-fw"></i> 菜單列表</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/back_activitylist') }}"><i class="fa fa-dashboard fa-fw"></i> 活動列表</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/back_authorlist') }}"><i class="fa fa-dashboard fa-fw"></i> 作家列表</a>
+                            </li>
+                        </ul>
+                    @endif
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>

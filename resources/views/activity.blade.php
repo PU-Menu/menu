@@ -53,53 +53,25 @@
         <table class="table table-striped" style="background-color:#FFF">
         <thead>
           <th colspan="3" class="success"></th>
-        </thead>                                                                      
-        <tr>
-        <!-- 顯示分類圖片 -->
-        <td style="text-align: center;" >
-          <img src="{{ URL::asset('/leaf.png') }}">
-        </td>
-        <!-- 顯示活動標題、內容 -->
-        <td> 
-          <a href="https://www.facebook.com/events/825387804306997/" target="_blank" id="item" >
-            ［血觀音］和導演聊電影：楊雅喆中部首場見面會！
-          </a>
-        </td> 
-        <!-- 顯示發表日期 -->
-        <td style="text-align: center; vertical-align: middle; white-space: nowrap;">
-          2017-11-29
-        </td>
-        <tr>
-        <!-- 顯示分類圖片 -->
-        <td style="text-align: center;" >
-          <img src="{{ URL::asset('/leaf.png') }}">
-        </td>
-        <!-- 顯示活動標題、內容 -->
-        <td> 
-          <a href="https://www.facebook.com/events/1321763511269122/" target="_blank" id="item" >
-            文學 x 裏千家茶道（體驗班）
-          </a>
-        </td> 
-        <!-- 顯示發表日期 -->
-        <td style="text-align: center; vertical-align:middle;white-space:nowrap;">
-          2017-11-25
-        </td>
-        <tr>
-        <!-- 顯示分類圖片 -->
-        <td style="text-align: center;" >
-          <img src="{{ URL::asset('/leaf.png') }}">
-        </td>
-        <!-- 顯示活動標題、內容 -->
-        <td> 
-          <a href="https://www.facebook.com/events/1462309837168073/" target="_blank" id="item" >
-            【作家午茶】許悔之：書寫的療癒，從詩談起
-          </a>
-        </td> 
-        <!-- 顯示發表日期 -->
-        <td style="text-align: center; vertical-align:middle;white-space:nowrap;">
-          2017-09-23
-        </td>
-
+        </thead> 
+        @foreach($activityData as $row)                                                                     
+          <tr>
+          <!-- 顯示分類圖片 -->
+            <td style="text-align: center;" >
+              <img src="{{ URL::asset('/leaf.png') }}">
+            </td>
+            <!-- 顯示活動標題、內容 -->
+            <td> 
+              <a href="{{ $row->activity_content }}" target="_blank" id="item" >
+                {{ $row->title }}
+              </a>
+            </td> 
+            <!-- 顯示發表日期 -->
+            <td style="text-align: center; vertical-align: middle; white-space: nowrap;font-size:25px;">
+              {{ $row->created_at }}
+            </td>
+          </tr>
+        @endforeach
         </table>
       </div>
 
