@@ -24,13 +24,17 @@
 	.my-footer-col {
         text-align: center;
         font-size:20px;
-    }
+	}
+	
+	.my-footer-col > ul {
+		display: inline;
+	}
 
     .my-footer-col-title {
         font-size: 30px; 
         font-weight:bold; 
 		margin:10px;
-		color:white;
+		color:#c9be80;
     }
 
     .my-footer-col-li {
@@ -50,7 +54,7 @@
 	}
 	
 	.icon::before{
-		content: "About Us";
+		/*content: "About Us";*/
 		font-size: 20px;
 		height: 20px;
 		color: white;
@@ -65,23 +69,42 @@
 		height: 20px;
 		color: white;
 		position: absolute;
-  		top: 13px;
-  		right: 13%;
+  		top: 20px;
+  		right: 5%;
 	}
+	
+	.btnHome{
+		height: 70px;
+		width: 70px;
+		position: fixed;
+		top: 24px;
+  		left: 5%;
+		z-index: 4;
+		background-color: rgba(0, 0, 0, 0.7);
+		/*background-color: rgba(5, 112, 56, 0.8);*/
+		border-radius: 50%;
+	}
+
+	.btnHome:hover{
+		background-color: rgba(0, 0, 0, 1);
+		/*background-color: rgba(5, 112, 56, 0.8);*/
+	}
+
 </style>
 </head>
 <body>
 	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">
 		
-		<!--
+		
 		<span aria-hidden="true" class="cd-icon"></span>
-		-->
-		<span class="icon" id="btnIcon"></span>
+		
+		<!--<span class="icon" id="btnIcon"></span>-->
 		
 	</a>
-
+	<a href="{{ url('/') }}">
+		<img class="btnHome" src="{{ URL::asset('/home.png') }}" />
+	</a>
 	
-
 	<div class="cd-projects-container">
 		<ul class="cd-projects-previews">
 			<li>
@@ -195,6 +218,7 @@
 	</div> <!-- .cd-project-container -->
 
 	<nav class="cd-primary-nav" id="primary-nav">
+		
 		<ul>
 			<li class="cd-label">about us</li>
 			<!--
@@ -203,24 +227,27 @@
 			<li><a href="#0">Our projects</a></li>
 			<li><a href="#0">Contact us</a></li>
 			-->
+			
 			<div class="container">
                 <div class="row"> 
-                    <div class="footer-col col-md-4 my-footer-col">
-                        <ul>   
-                            <li class="my-footer-col-title">網路創新服務設計</li>
-                            <li class="my-footer-col-li">鍾韻茹</li>
-                            <li class="my-footer-col-li">吳怡蓉</li>
-                            <li class="my-footer-col-li">蔡妙欣</li>
-                            <li class="my-footer-col-li">金正言</li>
-                    </div>
-                    <div class="footer-col col-md-4 my-footer-col">
+					<div class="footer-col col-md-4 col-xs-12 my-footer-col">
+						<ul>   
+							<li class="my-footer-col-title">網路創新服務設計</li>
+							<li class="my-footer-col-li">鍾韻茹</li>
+							<li class="my-footer-col-li">吳怡蓉</li>
+							<li class="my-footer-col-li">蔡妙欣</li>
+							<li class="my-footer-col-li">金正言</li>
+						</ul>
+					</div>
+                    <div class="footer-col col-md-4 col-xs-12 my-footer-col">
                         <ul>    
                             <li class="my-footer-col-title">城市意象與行銷企劃</li>
                             <li class="my-footer-col-li">尤姿雅</li>
                             <li class="my-footer-col-li">李佳婍</li>
                             <li class="my-footer-col-li">黃佑歆</li>
+						</ul>
 					</div>
-					<div class="footer-col col-md-4 my-footer-col">
+					<div class="footer-col col-md-4 col-xs-12 my-footer-col">
                         <ul>    
                             <li class="my-footer-col-title">聯絡我們</li>
 							<li class="my-footer-col-li">櫟舍文學餐廳 Rekisha</li>
@@ -233,7 +260,7 @@
                     </div>
                 </div>
             </div>
-		</ul>
+		</ul>	
 	</nav> <!-- .cd-primary-nav -->
 
     
