@@ -56,7 +56,7 @@ Route::post('/cancle_order', 'Backstage@cancle_order');//更新菜單
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/location', 'MenuController@location');
 Route::get('/home', 'MenuController@header');
 Route::get('/author', 'MenuController@author');
