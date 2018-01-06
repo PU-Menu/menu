@@ -402,4 +402,48 @@ class Backstage extends Controller
             return redirect('/back_login');
         }
     }
+    //訂位確認
+    public function order_list()
+    {
+        session_start();
+        if($_SESSION['permission']>0){
+            $allData = DB::select('select * from order_table');
+            return view('/back/order_list',compact('allData'));
+        }else{
+            return redirect('/back_login');
+        }
+    }
+    public function confirm_order(Request $request)//更新作家資料
+    {  
+        session_start();
+        if($_SESSION['permission']>0){
+            $id = request()->input('id');
+            $date = date("Y-m-d H:i:s");
+            DB::table('order_table')->where('id', '=', $id)->update(
+                [
+                    'status' =>  2,
+                    'complete_at' => $date
+                ]   
+            );
+            return redirect('/back_orderlist');
+        }else{
+            return redirect('/back_login');
+        }
+    }
+    public function cancle_order(Request $request)//更新作家資料
+    {  
+        session_start();
+        if($_SESSION['permission']>0){
+            $id = request()->input('id');
+            DB::table('order_table')->where('id', '=', $id)->update(
+                [
+                    'status' =>  0,
+                    'complete_at' => null
+                ]   
+            );
+            return redirect('/back_orderlist');
+        }else{
+            return redirect('/back_login');
+        }
+    }
 }

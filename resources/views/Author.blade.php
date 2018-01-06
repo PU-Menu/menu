@@ -47,7 +47,7 @@ body{
           </p>
           <font size="5">
             <p class="">　
-             <img src="{{ url('/img/'.$row->img) }}" style="float: right; margin: 10px;width: 300px;height:300px;"> 
+             <img src="{{ url('/img/'.$row->img) }}" style="float: right; margin: 10px;width: 300px;"> 
               {!!$row->content!!}
             </p> 
             </font>

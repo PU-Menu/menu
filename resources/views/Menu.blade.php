@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
    <script src ="{{ URL::asset('/js/jquery-3.2.1.min.js') }}"> </script>
   <script src ="{{ URL::asset('/js/jquery.fancybox.min.js') }}"></script>
   <link rel ="stylesheet" type ="text/css" href ="{{ URL::asset('/css/jquery.fancybox.min.css') }}">
@@ -71,7 +71,7 @@
     text-align: left;
 }   
 .img-fluid{
-    width:400px;
+    width:340px;
     height:300px; 
 }
 </style>
@@ -95,17 +95,17 @@
       <div class="grid">
         <a data-fancybox data-src="#modal{{++$i}}" href="javascript:;"  class="btn">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12 col-md-12">
               <h1 class="subtitle">{{ $row->menu_name }}</h1>
             </div>
           </div>
           <div class="row">
 
-            <div class="col-md-4">
-              <img class="img-fluid d-block" src="{{url('/img/'.$row->img)}}" width="400" height="300"  style="border:2px #ccc solid;padding:10px;">
+            <div class="col-xs-12 col-md-4">
+              <img align="center" class="d-block" src="{{url('/img/'.$row->img)}}" width="350" height="250"  style="border:2px #ccc solid;padding:10px;">
             </div>
             
-            <div class="col-md-8">
+            <div class="col-xs-12 col-md-8" >
               <br>
               {!! $row->menu_content !!}
             </div>
