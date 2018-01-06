@@ -54,6 +54,8 @@ class MenuController extends Controller
     }
     public function index()
     {
+        session_start();
+        $_SESSION['permission'] = 0;
         return view('index');
     }
     public function activity()
@@ -71,6 +73,27 @@ class MenuController extends Controller
     public function orderSeat()
     {
         return view('orderSeat');
+    }
+    public function add_orderSeat()
+    {
+        $name = request()->input('name');
+        $phone = request()->input('phone');
+        $num = request()->input('num');
+        $order_date = request()->input('order_date');
+        $order_time = request()->input('order_time');
+
+            DB::table('order_table')->insert(
+                [
+                    'name' =>  $name,
+                    'phone' =>  $phone,
+                    'num' => $num,
+                    'order_date' => $order_date,
+                    'order_time' => $order_date,
+                    'status' => 1,
+                ]
+            );
+            echo "<script>alert('訂位成功')</script>";
+            return redirect('/header');
     }
 }
 
