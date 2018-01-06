@@ -41,7 +41,8 @@
   <div class="py-5">
     <div class="w3-container w3-animate-opacity content2">
       <div class="row">
-      <div class="col-md-8 col-sm-8">
+
+      <div class="col-md-8 col-sm-8 col-xs-8">
 
         <section>
           <div class="text-center inner-top">
@@ -100,20 +101,12 @@
         </td>
 
         </table>
-
-        <div class="col-md-12">
-          <div class="col-md-2 col-sm-2"></div>
-          <div class="col-md-8 col-sm-8" style="padding-top: 5px;">
-          <!-- 顯示影片 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CxyhanBrK0k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-2 col-sm-2"></div>
-        </div>
       </div>
 
-      <div class="col-md-4 col-sm-4">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRekisha06%2F&tabs=timeline%2Cevents%2Cmessages&width=300&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><p><br>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRekisha06%2F&tabs=timeline%2Cevents%2Cmessagessmall_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><p><br>
       </div>
+
       </div>
     </div>
   </div>
