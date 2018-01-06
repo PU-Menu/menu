@@ -67,11 +67,15 @@
   margin-top: 30px;
   opacity: 0.9;
   border-radius: 5px;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 body{
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h2{
+  font-size: 30px;
 }
 
 </style>
@@ -95,7 +99,7 @@ body{
       </div>
 
       <div class="col-md-12 w3-container w3-center w3-animate-opacity">
-      <a href="{{ url('/header') }}" id="item"><button class="button" style="vertical-align:middle" ><span>瞭解更多？ </span></button></a>
+      <a href="{{ url('/home') }}" id="item"><button class="button" style="vertical-align:middle" ><span>瞭解更多？ </span></button></a>
     </div>
     </div>
 

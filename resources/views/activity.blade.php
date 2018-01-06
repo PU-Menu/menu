@@ -33,6 +33,8 @@
   margin: 5px;
 }
 
+
+
 </style>
 
 <title>活動快報</title>
@@ -61,13 +63,13 @@
               <img src="{{ URL::asset('/leaf.png') }}">
             </td>
             <!-- 顯示活動標題、內容 -->
-            <td> 
+            <td style="font-size:20px;"> 
               <a href="{{ $row->activity_content }}" target="_blank" id="item" >
                 {{ $row->title }}
               </a>
             </td> 
             <!-- 顯示發表日期 -->
-            <td style="text-align: center; vertical-align: middle; white-space: nowrap;font-size:25px;">
+            <td style="font-size:20px;">
               {{ $row->created_at }}
             </td>
           </tr>
@@ -76,7 +78,7 @@
       </div>
 
       <div class="col-md-4 col-sm-4 col-xs-4">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRekisha06%2F&tabs=timeline%2Cevents%2Cmessagessmall_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><p><br>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRekisha06%2F&tabs=timeline%2Cevents%2Cmessages&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><p><br>
       </div>
 
       </div>
