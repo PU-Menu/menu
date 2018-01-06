@@ -49,11 +49,7 @@
     </div>
     <div class="form-group">
       <label for="phone">連絡電話:</label>
-<<<<<<< HEAD
       <input type="tel" class="form-control" placeholder="請輸入 電話號碼" name="phone" required="此欄位為必填">
-=======
-      <input type="number" class="form-control" id="phone" placeholder="請輸入 電話號碼" name="phone">
->>>>>>> yr
     </div>
     <div class="form-group">
       <label for="people">人數:</label>
