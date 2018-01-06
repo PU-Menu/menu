@@ -49,6 +49,11 @@ Route::post('/input_author', 'Backstage@input_author');//活動資料匯入資�
 Route::post('/delete_author', 'Backstage@delete_author');//刪除活動
 Route::post('/update_author', 'Backstage@update_author');//更新菜單
 
+//後台:訂位
+Route::get('/back_orderlist', 'Backstage@order_list');//訂位列表
+Route::post('/confirm_order', 'Backstage@confirm_order');//更新菜單
+Route::post('/cancle_order', 'Backstage@cancle_order');//更新菜單
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -58,7 +63,7 @@ Route::get('/author', 'MenuController@author');
 Route::get('/menu', 'MenuController@menu');
 Route::get('/all', 'MenuController@all');
 Route::get('/orderSeat', 'MenuController@orderSeat');
-
+Route::post('/add_orderSeat', 'MenuController@add_orderSeat');
 
 Route::get('/dish1', 'MenuController@dish1');
 Route::get('/dish2', 'MenuController@dish2');
