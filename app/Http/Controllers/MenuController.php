@@ -93,7 +93,7 @@ class MenuController extends Controller
                 ]
             );
             echo "<script>alert('訂位成功')</script>";
-            return redirect('/header');
+            return redirect('/home');
     }
 }
 

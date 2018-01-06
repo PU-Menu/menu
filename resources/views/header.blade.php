@@ -94,12 +94,8 @@
 </head>
 <body>
 	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">
-		
-		
 		<span aria-hidden="true" class="cd-icon"></span>
-		
 		<!--<span class="icon" id="btnIcon"></span>-->
-		
 	</a>
 	<a href="{{ url('/') }}">
 		<img class="btnHome" src="{{ URL::asset('/home.png') }}" />
