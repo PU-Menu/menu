@@ -59,7 +59,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">後台</a>
+                <a class="navbar-brand" href="">後台</a>
             </div>
             <!-- /.navbar-header -->
 

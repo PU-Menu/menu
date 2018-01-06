@@ -21,6 +21,7 @@
             <tr>
                 <th>#</th>
                 <th>姓名</th>
+                <th>圖片</th>
                 <th>修改</th>
                 <th>刪除</th>
             </tr>
@@ -29,11 +30,13 @@
                 <tr>
                     <td>{{ $i++ }}</td>
                     <td>{{ $row->name }}</td>
+                    <td><img src="{{url('/img/'.$row->img)}}" alt="" width="100px;" height="100px"></td>
                     <td>
                         <form action="{{ url('/edit_author') }}" method="post">
                             {{ csrf_field() }}
                             <input type="hidden" name="id" value="{{ $row->id }}">
                             <input type="hidden" name="name" value="{{ $row->name }}">
+                            
                             <input type="hidden" name="content" value="{{ $row->content }}">
                             <button type="submit" class="btn btn-warning">修改</button>
                         </form>

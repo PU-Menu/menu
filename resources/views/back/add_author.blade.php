@@ -22,12 +22,14 @@
 
         @section('content')
             <p>新增作者</p>
-            <form action="{{ url('/input_author') }}" method="post">
+            <form action="{{ url('/input_author') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="exampleInputPassword1">作者姓名</label>
                     <input  name="name" type="text" class="form-control" id="exampleInputPassword1" placeholder="作者姓名">
                 </div>
+                <label for="exampleInputPassword1">圖片上傳</label>
+                <input type="file" class="form-control" id="img" name="img" placeholder="上傳圖片" value="">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">作者介紹</label>
                     <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:150%;"></textarea>

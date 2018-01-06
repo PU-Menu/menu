@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use DB;
 class MenuController extends Controller
 {
     /**
@@ -27,7 +27,8 @@ class MenuController extends Controller
     }
     public function menu()
     {
-        return view('Menu');
+        $allData = DB::select('select * from menu_table');
+        return view('Menu',['allData'=>$allData]);
     }
 
     public function location()
@@ -37,7 +38,8 @@ class MenuController extends Controller
 
     public function header()
     {
-        return view('header');
+        $allData = DB::select('select * from menu_table');
+        return view('header',['allData'=>$allData]);
     }
 
     public function dish1()
@@ -63,6 +65,10 @@ class MenuController extends Controller
     public function all()
     {
         return view('all');
+    }
+    public function orderSeat()
+    {
+        return view('orderSeat');
     }
 }
 
