@@ -97,12 +97,7 @@ body{
       <div class="col-md-12 w3-container w3-center w3-animate-opacity">
       <a href="{{ url('/header') }}" id="item"><button class="button" style="vertical-align:middle" ><span>瞭解更多？ </span></button></a>
     </div>
-
     </div>
-
-    
-    
-  
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery_bigpicture.min.js"></script>
