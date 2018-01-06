@@ -22,7 +22,7 @@
         @stop
 
         @section('content')
-            <p>修改菜單</p>
+            <p>修改密碼</p>
             <form action="{{ url('/update_member') }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
