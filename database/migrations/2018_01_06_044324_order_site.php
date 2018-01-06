@@ -20,7 +20,7 @@ class OrderSite extends Migration
             $table->integer('num');
             $table->string('order_date',15);
             $table->string('order_time',15);
-            $table->string('complete_at',25);
+            $table->string('complete_at',25)->default(null);
             $table->integer('status');
         });
     }
