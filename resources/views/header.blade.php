@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="{{ URL::asset('/css/reset.css') }}"> <!-- CSS reset -->
 	<link rel="stylesheet" href="{{ URL::asset('/css/style-sliding.css') }}"> <!-- Resource style -->
 	<script src="{{ URL::asset('/js/modernizr.js') }}"></script> <!-- Modernizr -->
-	  
+	<link rel="icon" href="{{ URL::asset('/home5.jpg') }}" type="image/ico">
 	<title>櫟舍文學餐廳</title>
 	
 <style>
