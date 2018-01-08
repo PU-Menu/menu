@@ -83,11 +83,11 @@
     </div>
     <div class="form-group">
       <label for="date">訂位日期:</label>
-      <input type="date" class="form-control" id="date" name="order_date" required="此欄位為必填">
+      <input type="date" class="form-control" id="date" name="order_date" required="此欄位為必填" value=<?php echo date('Y-m-d');?>>
     </div>
     <div class="form-group">
       <label for="time">訂位時間:</label>
-      <input type="time" class="form-control" id="time" name="order_time" required="此欄位為必填">
+      <input type="time" class="form-control" id="time" name="order_time" required="此欄位為必填" value="13:00">
     </div>
     <div class="form-group OK">
       <label for="OK" style="color: red;">**位置將保留15分鐘**</label></br>
@@ -99,6 +99,27 @@
 </div>
 
 
+<script>
+function convertToISO(timebit) {
+  // remove GMT offset
+  timebit.setHours(0, -timebit.getTimezoneOffset(), 0, 0);
+  // format convert and take first 10 characters of result
+  var isodate = timebit.toISOString().slice(0,10);
+  return isodate;
+}
 
+var bookdate = document.getElementById('date');
+var currentdate = new Date();
+bookdate.min = convertToISO(currentdate);
+bookdate.placeholder = bookdate.min;
+
+var futuredate = new Date();
+// go forward 7 days into the future
+futuredate.setDate(futuredate.getDate() + 365);
+bookdate.max = convertToISO(futuredate);
+
+</script>
 </body>
+
+
 </html>

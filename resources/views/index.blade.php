@@ -18,7 +18,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/the-big-picture.css" rel="stylesheet">
-
+  <link rel="icon" href="{{ URL::asset('/home5.jpg') }}" type="image/ico">
 </head>
 
 <style>
