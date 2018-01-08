@@ -57,7 +57,7 @@
 
 <header> 
   <div>
-    <a href="{{ url('/') }}">
+    <a href="{{ url('/home') }}">
       <div class="backHome">< 回首頁</div>
     </a>  
   </div>
