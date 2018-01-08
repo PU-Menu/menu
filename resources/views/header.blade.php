@@ -54,7 +54,6 @@
 	}
 	
 	.icon::before{
-		/*content: "About Us";*/
 		font-size: 20px;
 		height: 20px;
 		color: white;
@@ -64,7 +63,6 @@
 	}
 
 	.icon::after{
-		/*content: "X";*/
 		font-size: 20px;
 		height: 20px;
 		color: white;
@@ -81,13 +79,11 @@
   		left: 5%;
 		z-index: 4;
 		background-color: rgba(0, 0, 0, 0.7);
-		/*background-color: rgba(5, 112, 56, 0.8);*/
 		border-radius: 50%;
 	}
 
 	.btnHome:hover{
 		background-color: rgba(0, 0, 0, 1);
-		/*background-color: rgba(5, 112, 56, 0.8);*/
 	}
 
 </style>
@@ -95,7 +91,6 @@
 <body>
 	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">
 		<span aria-hidden="true" class="cd-icon"></span>
-		<!--<span class="icon" id="btnIcon"></span>-->
 	</a>
 	<a href="{{ url('/') }}">
 		<img class="btnHome" src="{{ URL::asset('/home.png') }}" />
@@ -107,9 +102,6 @@
 				<a href="#0">
 					<div class="cd-project-title">
 						<h2>活動快報</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div>
 				</a>
 			</li>
@@ -118,9 +110,6 @@
 				<a href="#0">
 					<div class="cd-project-title">
 						<h2>套餐簡介</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div>
 				</a>
 			</li>
@@ -129,9 +118,6 @@
 				<a href="#0">
 					<div class="cd-project-title">
 						<h2>作家生平</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div>
 				</a>
 			</li>
@@ -140,90 +126,67 @@
 				<a href="#0">
 					<div class="cd-project-title">
 						<h2>餐廳資訊</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div>
 				</a>
 			</li>
-		</ul> <!-- .cd-projects-previews -->
+		</ul>
 
 		<ul class="cd-projects">
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
 						<h2>活動快報</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div> 
 				</div>
 
 				<div class="cd-project-info">
 				@include('activity')					
-				</div> <!-- .cd-project-info -->
+				</div>
 			</li>
 
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
 						<h2>套餐簡介</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div> 
 				</div>
 
 				<div class="cd-project-info">
 				@include('Menu')
-				</div> <!-- .cd-project-info -->
+				</div>
 			</li>
 
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
 						<h2>作家生平</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div> 
 				</div>
 
 				<div class="cd-project-info">
 					@include('Author')
-				</div> <!-- .cd-project-info -->
-			</li>
+				</div>
 
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
 						<h2>餐廳資訊</h2>
-						<!--
-						<p>Brief description of the project here</p>
-						-->
 					</div> 
 				</div>
 
 				<div class="cd-project-info">
 					@include('location')
-				</div> <!-- .cd-project-info -->
+				</div>
 			</li>
-		</ul> <!-- .cd-projects -->
+		</ul>
 
 		<button class="scroll cd-text-replace">Scroll</button>
-	</div> <!-- .cd-project-container -->
+	</div>
 
 	<nav class="cd-primary-nav" id="primary-nav">
 		
 		<ul>
-			<li class="cd-label">about us</li>
-			<!--
-			<li><a href="#0">The team</a></li>
-			<li><a href="#0">Our services</a></li>
-			<li><a href="#0">Our projects</a></li>
-			<li><a href="#0">Contact us</a></li>
-			-->
-			
+			<li class="cd-label">about us</li>	
 			<div class="container">
                 <div class="row"> 
 					<div class="footer-col col-md-4 col-xs-12 my-footer-col">
@@ -257,10 +220,10 @@
                 </div>
             </div>
 		</ul>	
-	</nav> <!-- .cd-primary-nav -->
+	</nav>
 
     
 <script src="{{ URL::asset('/js/jquery-2.1.1.js') }}"></script>
-<script src="{{ URL::asset('/js/main-sliding.js') }}"></script> <!-- Resource jQuery -->
+<script src="{{ URL::asset('/js/main-sliding.js') }}"></script>
 </body>
 </html>

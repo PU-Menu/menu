@@ -52,9 +52,6 @@
    
 }
 .display-1 {
-    /*position: relative;*/
-   /* top:50px;*/
-    /*margin-top: 150px;*/
     text-align: center;
     font-size: 84px;
 }
@@ -62,8 +59,6 @@
 .content {
         text-align: center;
         width: 80%;
-        /*margin-top: 50px;*/
-       /* margin-left: 150px;*/
         top:-400px;
     }
 .subtitle{

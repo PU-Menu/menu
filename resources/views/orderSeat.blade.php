@@ -114,7 +114,6 @@ bookdate.min = convertToISO(currentdate);
 bookdate.placeholder = bookdate.min;
 
 var futuredate = new Date();
-// go forward 7 days into the future
 futuredate.setDate(futuredate.getDate() + 365);
 bookdate.max = convertToISO(futuredate);
 
