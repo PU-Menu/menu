@@ -105,7 +105,7 @@
               <img class="img-fluid d-block" src="{{url('/img/'.$row->img)}}" width="400" height="300"  style="border:2px #ccc solid;padding:10px;">
             </div>
             
-            <div class="col-md-8">
+            <div class="col-2 text-truncate" style="display:inline-block">
               <br>
               {!! $row->menu_content !!}
             </div>
