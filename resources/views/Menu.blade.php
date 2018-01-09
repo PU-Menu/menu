@@ -99,7 +99,6 @@
             <div class="col-xs-12 col-md-4">
               <img align="center" class="d-block" src="{{url('/img/'.$row->img)}}" width="350" height="250"  style="border:2px #ccc solid;padding:10px;">
             </div>
-            
             <div class="col-xs-12 col-md-8" >
               <br>
               {!! $row->menu_content !!}
